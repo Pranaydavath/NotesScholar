@@ -2,6 +2,13 @@
 
 **Notes made easy for college students.**
 
+## Live Demo 🚀
+
+You can access the live deployed version of NotesScholar here:
+**[https://notesscholar-5a251.web.app/](https://notesscholar-5a251.web.app/)**
+
+---
+
 ## About The Project
 
 NotesScholar is a web application designed specifically for college students (initially focused on VNRVJIET) to provide a centralized and easily accessible repository for lecture notes and PDF materials. Finding reliable and organized notes, especially during exam periods, can be a significant challenge for students. This project aims to solve that problem by bringing together notes for various subjects across different engineering branches into one convenient platform.
