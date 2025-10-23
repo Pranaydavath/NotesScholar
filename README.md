@@ -1,0 +1,2 @@
+# NotesScholar
+Notes made easy
