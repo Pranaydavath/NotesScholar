@@ -16,17 +16,16 @@ import {
   // Add other auth functions like signOut if you implement logout later
 } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-auth.js";
 
-// Your NEW web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+// Your NEW web app's Firebase configuration (Project: notesscholar-5a251)
 const firebaseConfig = {
-  apiKey: "AIzaSyCc4K2P1cGq-fguv4hk5k1kfpp2LG1G2Bk",
-  authDomain: "notesscholar-5a251.firebaseapp.com",
-  databaseURL: "https://notesscholar-5a251-default-rtdb.firebaseio.com/",
-  projectId: "notesscholar-5a251",
-  storageBucket: "notesscholar-5a251.firebasestorage.app",
-  messagingSenderId: "22586978361",
-  appId: "1:22586978361:web:f97b1be164d78174a0dde8",
-  measurementId: "G-Q1XZXEZ6RZ",
+  apiKey: "AIzaSyCc4K2P1cGq-fguv4hk5k1kfpp2LG1G2Bk", // From your input
+  authDomain: "notesscholar-5a251.firebaseapp.com", // From your input
+  databaseURL: "https://notesscholar-5a251-default-rtdb.firebaseio.com/", // From your input
+  projectId: "notesscholar-5a251", // From your input
+  storageBucket: "notesscholar-5a251.appspot.com", // Derived from project ID
+  messagingSenderId: "22586978361", // From your input
+  appId: "1:22586978361:web:f97b1be164d78174a0dde8", // From your input
+  measurementId: "G-Q1XZXEZ6RZ", // Optional, from your input
 };
 
 // Initialize Firebase
@@ -46,8 +45,8 @@ if (
   try {
     // Connect to Auth Emulator (default port 9099)
     connectAuthEmulator(auth, "http://localhost:9099");
-    // Connect to Realtime Database Emulator (default port 9000, but use 9001 if you changed it)
-    connectDatabaseEmulator(database, "localhost", 9001); // <-- Using port 9001 as per previous message
+    // Connect to Realtime Database Emulator (Using port 9001 as specified)
+    connectDatabaseEmulator(database, "localhost", 9001); // <-- Port 9001
     console.log("Connected to Auth and Database Emulators.");
   } catch (error) {
     console.error("Error connecting to Firebase Emulators:", error);
@@ -90,7 +89,7 @@ if (loginButton) {
           .then(() => {
             // This block runs if the database write is successful
             console.log("User data saved successfully."); // Log DB success
-            // alert("User login successful"); // Commented out - prevents redirect until clicked
+            // alert("User login successful"); // Keep this commented out
             console.log("Attempting redirect to mainpage.html..."); // Log before redirect
             window.location.href = "mainpage.html"; // Redirect to the main application page
           })
