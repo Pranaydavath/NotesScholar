@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>NotesScholar</title>
+
+    <link rel="stylesheet" href="cssFile.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        min-height: 100vh;
+        background-color: #ced4da;
+        font-family: "Roboto", sans-serif;
+      }
+
+      #loginWithGoogle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px 20px;
+        border: none;
+        background-color: #74c0fc;
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        width: 250px; /* Adjust the width as needed */
+        margin-bottom: 20px;
+      }
+
+      #loginWithGoogle:hover {
+        background-color: #495057;
+      }
+
+      #loginWithGoogle img {
+        width: 24px;
+        height: 24px;
+        margin-right: 10px;
+      }
+
+      h1 {
+        color: #333333;
+        font-size: 28px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      @media only screen and (max-width: 600px) {
+        #loginWithGoogle {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Welcome to Notesscholar</h1>
+
+    <button id="loginWithGoogle">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png"
+        alt="Google Logo"
+      />
+      Login with Google
+    </button>
+
+    <script src="script.js" type="module"></script>
+  </body>
+</html>

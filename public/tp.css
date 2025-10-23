@@ -1,0 +1,118 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #8db9cf77;
+  color: white;
+  padding: 10px;
+  font-size: 18px;
+}
+
+
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+
+}
+.f1{
+  border: 4px solid rgb(26, 164, 182);
+  border-radius: 10px;
+  letter-spacing: 0.05em;
+}
+.f1:hover{
+  background-color: rgb(96, 200, 214);
+  background: var(--clr);
+  transition:0.3s;
+  letter-spacing: 2px;
+  box-shadow: 0 0 15px var(--clr);
+}
+.button{
+  border-radius: 5px;
+}
+.nav {
+  border-radius: 20px;
+}
+.nav li {
+ margin-right: 20px;
+  padding: 7px 16px;
+
+  
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav button {
+  background-color:rgba(207, 160, 160, 0.281)
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+}
+body {
+  background-image: url("img/sedu.jpeg");
+  background-size: cover;
+  background-color: #000;
+}
+.h {
+  text-align: center;
+  color: white;
+  font-size: 36px;
+  margin-top: 50px;
+  text-shadow: 2px 2px #000;
+}
+
+.search input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  font-size: 18px;
+  width: 200px;
+}
+
+.search input:focus {
+  outline: none;
+  box-shadow: 2px 2px 5px rgba(63, 81, 181, 0.7);
+}
+.ul2{
+  margin: 30px 40px;
+  padding: 10px 20px;
+  margin: 20px;
+}
+.pdf{
+  height: 1780px;
+  width: 88%;
+  border: 5px solid green;
+  display: flex;
+  flex-direction: row;
+flex-wrap: wrap;
+padding :80px;
+padding-bottom: 80px;
+justify-content: left;
+
+}
+.item{
+  width: 600px
+  height: 30px;
+  padding: 4px;
+  margin: 35px;
+ 
+  background-color: rgb(208, 255, 205);
+  border: 2px solid slateblue;
+  transition:0.5s
+  
+}
+.item img {
+  height: 250px;
+  width: 350px;
+}
+
+.item:hover{
+transform: scale(1.2);
+}

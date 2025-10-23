@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes Scholar</title>
+    <link rel="icon" type="image/jpg" href="favi.jpg" />
+    <link rel="stylesheet" href="css.css" />
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/5.1/examples/footers/"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//fonts.googleapis.com/css?family=Forum"
+    />
+  </head>
+  <body style="background-color: #13111a" class="bod">
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+      <symbol id="bootstrap" viewBox="0 0 118 94">
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"
+        ></path>
+      </symbol>
+      <symbol id="facebook" viewBox="0 0 16 16">
+        <path
+          d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+        ></path>
+      </symbol>
+      <symbol id="instagram" viewBox="0 0 16 16">
+        <path
+          d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+        ></path>
+      </symbol>
+      <symbol id="twitter" viewBox="0 0 16 16">
+        <path
+          d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+        ></path>
+      </symbol>
+    </svg>
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary"
+      style="background-color: #13111a"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Notesscholar </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a
+              class="nav-link active m-3"
+              id="cont"
+              aria-current="page"
+              href="https://forms.gle/rF3vBb2J2akYNrYMA"
+              >Contribute</a
+            >
+          </div>
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              More
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="https://api.whatsapp.com/send/?phone=%2B916281170374&text&type=phone_number&app_absent=0"
+                  >Contact us</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="http://www.vnrvjiet.ac.in/vnrexams.php"
+                  >Latest Exams News</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="https://vnrvjietexams.net/Eduprime3Exam/ExamFee"
+                  >Pay Exam Fee</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="https://automation.vnrvjiet.ac.in/eduprime3"
+                  >Check Attendance</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="ticker">
+        <!-- <div class="title"><h5>ECE 3-2 ADDED</h5></div> -->
+        <div class="news">
+          <!-- <marquee class="news-content"> <h2>ECE n</h2></marquee> -->
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <h1 class="display-1 text-white text-center">Hello Students....</h1>
+      <br />
+      <!-- < class="h" style="color: cornsilk">
+        Use the below notes for reference
+    </p> -->
+      <p class="lead text-center text-white">
+        Use the below notes for reference
+      </p>
+
+      <section class="pdf d-flex justify-content-between container-fluid">
+        <!-- cse -->
+        <div class="card mx-auto mt-5 shadow d-flex" style="width: 20rem">
+          <img src="./img/CSE.jfif" alt="" class="w-100 h-100" />
+
+          <div class="card-body">
+            <div class="">
+              <!-- <h2 class="text-success text-center">CSE</h2> -->
+            </div>
+            <a
+              href="https://drive.google.com/drive/folders/1yeYqyIQQYNPZComf2PMmZp0msckDOM-m?usp=share_link"
+            >
+              <button class="btn btn-primary">
+                COMPUTER SCIENCE AND ENGINEERING
+              </button>
+            </a>
+          </div>
+        </div>
+        <!-- ece -->
+        <div class="card mx-auto mt-5 shadow d-flex" style="width: 20rem">
+          <img src="./img/ECE.jfif" alt="" class="w-100 h-100" />
+
+          <div class="card-body">
+            <div class="">
+              <!-- <h2 class="text-success"></h2> -->
+            </div>
+            <a
+              href="https://drive.google.com/drive/folders/1thbe0liH9o0DNeMlZd85qNZTbevhT6Hb?usp=share_link"
+            >
+              <button class="btn btn-primary">
+                ELECTRONICS AND COMMUNICATION ENGINEERING
+              </button>
+            </a>
+          </div>
+        </div>
+        <!-- it -->
+        <div class="card mx-auto mt-5 shadow d-flex" style="width: 20rem">
+          <img src="./img/it.jpg" alt="" class="w-100 h-100" />
+
+          <div class="card-body">
+            <div class="">
+              <!-- <h2 class="text-success">CSE</h2> -->
+            </div>
+            <a
+              href="https://drive.google.com/drive/folders/1P13zm5Gvg2oYAc8x7SyERZ0Vbv91EXvL?usp=share_link"
+            >
+              <button class="btn btn-primary">INFORMATION TECHNOLOGY</button>
+            </a>
+          </div>
+        </div>
+        <!-- eee -->
+        <div class="card mx-auto mt-5 shadow d-flex" style="width: 20rem">
+          <img src="./img/eee.jpg" alt="" class="w-100 h-100" />
+
+          <div class="card-body">
+            <div class="">
+              <!-- <h2 class="text-success">CSE</h2> -->
+            </div>
+            <a
+              href="https://drive.google.com/drive/folders/1mOA41c372d3IBo4puovf6845qPRX7_3V?usp=share_link"
+            >
+              <button class="btn btn-primary">
+                ELECTRICAL AND ELECTRONICS ENGINEERING
+              </button>
+            </a>
+          </div>
+        </div>
+        <!-- eie -->
+        <div class="card mx-auto mt-5 shadow d-flex" style="width: 20rem">
+          <img src="./img/eie.jpg" alt="" class="w-100 h-100" />
+
+          <div class="card-body">
+            <div class="">
+              <!-- <h2 class="text-success">CSE</h2> -->
+            </div>
+            <a
+              href="https://drive.google.com/drive/folders/1M5qKBDYRIAOs4xXDq-uqC47sC2nVVH1A?usp=share_link"
+            >
+              <button class="btn btn-primary">
+                ELECTRONICS AND INSTRUMENTATION ENGINEERING
+              </button>
+            </a>
+          </div>
+        </div>
+        <!-- civ-->
+        <div class="card mx-auto mt-5 shadow d-flex" style="width: 20rem">
+          <img src="./img/civ.jpg" alt="" class="w-100 h-100" />
+
+          <div class="card-body">
+            <div class="">
+              <!-- <h2 class="text-success">CSE</h2> -->
+            </div>
+            <a
+              href="https://drive.google.com/drive/folders/1K-t57rKNPH4L_eovnxc3AKLN1_TgPLMu?usp=share_link"
+            >
+              <button class="btn btn-primary">CIVIL ENGINEERING</button>
+            </a>
+          </div>
+        </div>
+        <!-- mech -->
+        <div
+          class="card mx-auto mt-5 shadow d-flex"
+          id="1"
+          style="width: 20rem"
+        >
+          <img src="./img/mech.jpg" alt="" class="w-100 h-100" />
+
+          <div class="card-body">
+            <div class="">
+              <!-- <h2 class="text-success">CSE</h2> -->
+            </div>
+            <a
+              href="https://drive.google.com/drive/folders/1P1ItvV1AjOr4RtypKG-qK462FBjsl7_i?usp=share_link"
+            >
+              <button class="btn btn-primary">MECHANICAL ENGINEERING</button>
+            </a>
+          </div>
+        </div>
+        <!-- eie -->
+
+        <!-- CSD -->
+        <div class="card mx-auto mt-5 shadow d-flex" style="width: 20rem">
+          <img src="./img/CSD.jfif" alt="" class="w-100 h-100" />
+
+          <div class="card-body">
+            <div class="">
+              <!-- <h2 class="text-success">CSE</h2> -->
+            </div>
+            <a
+              href="https://drive.google.com/drive/folders/1vvr6W_qq-hrloWOqcWfBDtx6110Pa_BX?usp=share_link"
+            >
+              <button class="btn btn-primary">
+                COMPUTER SCIENCE (DATA SCIENCE)
+              </button>
+            </a>
+          </div>
+        </div>
+        <!-- AIML -->
+        <div class="card mx-auto mt-5 shadow d-flex" style="width: 20rem">
+          <img src="./img/AI.jfif" alt="" class="w-100 h-100" />
+
+          <div class="card-body">
+            <div class="">
+              <!-- <h2 class="text-success">CSE</h2> -->
+            </div>
+            <a
+              href="https://drive.google.com/drive/folders/1jqc1yvQik_0tWaz8pmo5RrE0B2eXrE9Q?usp=share_link"
+            >
+              <button class="btn btn-primary">COMPUTER SCIENCE (AIML)</button>
+            </a>
+          </div>
+        </div>
+        <!-- IOT-->
+        <div class="card mx-auto mt-5 shadow d-flex" style="width: 20rem">
+          <img src="./img/IOT.jpg" alt="" class="w-100 h-100" />
+
+          <div class="card-body">
+            <div class="">
+              <!-- <h2 class="text-success">CSE</h2> -->
+            </div>
+            <a
+              href="https://drive.google.com/drive/folders/1ZUKJ3f2Zevvb8k1p7BPKxS5wRqT99x0P?usp=share_link"
+            >
+              <button class="btn btn-primary">COMPUTER SCIENCE(IOT)</button>
+            </a>
+          </div>
+        </div>
+        <!-- AUTOMOBILE-->
+        <div class="card mx-auto mt-5 shadow d-flex" style="width: 20rem">
+          <img src="./img/auto.jpg" alt="" class="w-100 h-100" />
+
+          <div class="card-body">
+            <div class="">
+              <!-- <h2 class="text-success">CSE</h2> -->
+            </div>
+            <a
+              href="https://drive.google.com/drive/folders/1QrCuyPxtW4pyeteeLhz1jWFgJRwPNPjM?usp=share_link"
+            >
+              <button class="btn btn-primary">AUTOMOBILE ENGINEERING</button>
+            </a>
+          </div>
+        </div>
+        <!-- CSBS-->
+        <div class="card mx-auto mt-5 shadow d-flex" style="width: 20rem">
+          <img src="./img/csbs.jpg" alt="" class="w-100 h-100" />
+
+          <div class="card-body">
+            <div class="">
+              <!-- <h2 class="text-success">CSE</h2> -->
+            </div>
+            <a
+              href="https://drive.google.com/drive/folders/1QAs4T_zHf6M0Ea65_JsvtKsu6iTTkQ4N?usp=share_link"
+            >
+              <button class="btn btn-primary">
+                COMPUTER SCIENCE AND BUSINESS SYSTEMS
+              </button>
+            </a>
+          </div>
+        </div>
+        <!-- CYS -->
+        <div class="card mx-auto mt-5 shadow d-flex" style="width: 20rem">
+          <img src="./img/CYS.jpg" alt="" class="w-100 h-100" />
+
+          <div class="card-body">
+            <div class="">
+              <!-- <h2 class="text-success">CSE</h2> -->
+            </div>
+            <a
+              href="https://drive.google.com/drive/folders/1cEPO4Eh5LaORBW5weN3qXTU-cXOAAtn2?usp=share_link"
+            >
+              <button class="btn btn-primary">COMPUTER SCIENCE(CYS)</button>
+            </a>
+          </div>
+        </div>
+        <div class="card mx-auto mt-5 shadow d-flex" style="width: 20rem">
+          <img src="./img/CSE.jfif" alt="" class="w-100 h-100" />
+
+          <div class="card-body">
+            <div class="">
+              <!-- <h2 class="text-success">CSE</h2> -->
+            </div>
+            <a
+              href="https://drive.google.com/drive/folders/1C01momQk2M2mj2Ocs94PG22YiVgSwJiA?usp=share_link"
+            >
+              <button class="btn btn-primary">View Question Papers</button>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+      integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+      integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+      crossorigin="anonymous"
+    ></script>
+    <footer
+      class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top mt-5 text-bg-light"
+    >
+      <div class="col-md-4 d-flex align-items-center">
+        <span class="text-muted">© Notesscholar 2023</span>
+      </div>
+      <span class="text-muted">Version 0.0.2</span>
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3">
+          <a class="text-muted" href="/"
+            ><svg class="bi" width="24" height="24">
+              <use xlink:href="#twitter"></use></svg
+          ></a>
+        </li>
+        <li class="ms-3">
+          <a class="text-muted" href="/"
+            ><svg class="bi" width="24" height="24">
+              <use xlink:href="#instagram"></use></svg
+          ></a>
+        </li>
+        <li class="ms-3">
+          <a class="text-muted" href="/"
+            ><svg class="bi" width="24" height="24">
+              <use xlink:href="#facebook"></use></svg
+          ></a>
+        </li>
+      </ul>
+    </footer>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+      var Tawk_API = Tawk_API || {},
+        Tawk_LoadStart = new Date();
+      (function () {
+        var s1 = document.createElement("script"),
+          s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = "https://embed.tawk.to/645e49c974285f0ec46b1bf8/1h0850fo9";
+        s1.charset = "UTF-8";
+        s1.setAttribute("crossorigin", "*");
+        s0.parentNode.insertBefore(s1, s0);
+      })();
+    </script>
+    <!--End of Tawk.to Script-->
+  </body>
+</html>
